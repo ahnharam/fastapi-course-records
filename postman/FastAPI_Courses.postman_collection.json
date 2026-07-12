@@ -1,0 +1,107 @@
+{
+  "info": {
+    "_postman_id": "b766d1be-87bf-4ed6-8d40-dbc5e8df3fd0",
+    "name": "FastAPI Courses",
+    "description": "실습 4 수강기록 API의 GET, POST, 잘못된 POST 재현 컬렉션",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /courses",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/courses",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "courses"
+          ]
+        },
+        "description": "courses.json에 저장된 전체 수강기록 list를 조회합니다."
+      },
+      "response": []
+    },
+    {
+      "name": "POST /courses",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"course_name\": \"인간로봇상호작용\",\n  \"year\": \"2026\",\n  \"semester\": \"2\",\n  \"grade\": \"A+\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/courses",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "courses"
+          ]
+        },
+        "description": "새 과목을 JSON list 마지막에 추가하고 파일에 저장합니다."
+      },
+      "response": []
+    },
+    {
+      "name": "Invalid POST /courses (422)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"course_name\": \"\",\n  \"year\": 2026,\n  \"semester\": \"\",\n  \"grade\": \"A+\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/courses",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "courses"
+          ]
+        },
+        "description": "빈 과목명과 학기, 숫자 year로 422를 확인합니다. 서버는 계속 실행되어야 합니다."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000",
+      "type": "string"
+    }
+  ]
+}
