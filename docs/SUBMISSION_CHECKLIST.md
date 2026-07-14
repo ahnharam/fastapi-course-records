@@ -2,26 +2,26 @@
 
 ## 프로젝트
 
-- [ ] 실습 3과 분리된 새로운 GitHub 저장소인가?
-- [ ] 저장소가 Public 상태인가?
-- [ ] `main.py`와 `courses.json`이 포함되어 있는가?
-- [ ] `courses.json`의 최상위 값이 list인가?
-- [ ] 각 항목에 `course_name`, `year`, `semester`, `grade` 문자열이 있는가?
-- [ ] `requirements.txt`, `.gitignore`, README가 있는가?
-- [ ] Postman 컬렉션이 있고 인증정보가 없는가?
-- [ ] 키, 토큰, 쿠키, `.env` 같은 비밀정보가 커밋되지 않았는가?
-- [ ] GitHub Actions가 통과했는가?
+- [x] 실습 3과 분리된 새로운 GitHub 저장소인가?
+- [x] 저장소가 Public 상태인가?
+- [x] `main.py`와 `courses.json`이 포함되어 있는가?
+- [x] `courses.json`의 최상위 값이 list인가?
+- [x] 각 항목에 `course_name`, `year`, `semester`, `grade` 문자열이 있는가?
+- [x] `requirements.txt`, `.gitignore`, README가 있는가?
+- [x] Postman 컬렉션이 있고 인증정보가 없는가?
+- [x] 키, 토큰, 쿠키, `.env` 같은 비밀정보가 커밋되지 않았는가?
+- [x] GitHub Actions가 통과했는가?
 
 ## API와 파일 저장
 
-- [ ] `GET /courses`가 전체 list와 200을 반환하는가?
-- [ ] `POST /courses`가 새 과목과 201을 반환하는가?
-- [ ] POST 이후 JSON list 마지막에 과목이 추가되는가?
-- [ ] POST 이후 재GET에도 같은 과목이 보이는가?
-- [ ] 잘못된 요청이 422를 반환하는가?
-- [ ] 잘못된 요청 후에도 정상 GET이 가능한가?
-- [ ] 파일 오류가 500으로 처리되고 서버가 종료되지 않는가?
-- [ ] `python -m pytest -q`가 통과하는가?
+- [x] `GET /courses`가 전체 list와 200을 반환하는가?
+- [x] `POST /courses`가 새 과목과 201을 반환하는가?
+- [x] POST 이후 JSON list 마지막에 과목이 추가되는가?
+- [x] POST 이후 재GET에도 같은 과목이 보이는가?
+- [x] 잘못된 요청이 422를 반환하는가?
+- [x] 잘못된 요청 후에도 정상 GET이 가능한가?
+- [x] 파일 오류가 500으로 처리되고 서버가 종료되지 않는가?
+- [x] `python -m pytest -q`가 통과하는가?
 
 ## 영상 필수 장면
 

@@ -20,6 +20,7 @@ dist/
 .env
 .env.*
 !.env.example
+SUBMISSION.local.md
 
 # Runtime JSON lock and atomic-write temporary files
 courses.json.lock
