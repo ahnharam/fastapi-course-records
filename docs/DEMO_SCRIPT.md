@@ -84,7 +84,7 @@ python -m uvicorn main:app --reload
 
 ## 촬영 후
 
-- YouTube 공개 범위를 **일부 공개(Unlisted)**로 설정
+- YouTube 공개 범위를 **전체 공개(Public)**로 설정
 - 로그아웃 또는 시크릿 창에서 링크 접근 확인
 - 링크는 공개 README가 아니라 KLAS에 제출
 - 영상은 2026-07-20까지 유지

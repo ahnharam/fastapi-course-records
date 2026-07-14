@@ -153,7 +153,7 @@ fastapi-course-records/
 ## 제출
 
 - 실습 4 전용의 새로운 public GitHub 저장소 주소를 제출합니다.
-- 영상은 YouTube 일부공개(Unlisted)로 업로드하고 KLAS에만 링크를 제출합니다.
+- 영상은 YouTube 전체 공개(Public)로 업로드하고 KLAS에 링크를 제출합니다.
 - 영상에는 터미널, Postman GET·POST·재GET, 실제 JSON 파일 반영이 모두 보여야 합니다.
 - 과제 표기 마감은 `2026-07-08 23:59:59`, 영상 유지 기한은 `2026-07-20`입니다.
 
